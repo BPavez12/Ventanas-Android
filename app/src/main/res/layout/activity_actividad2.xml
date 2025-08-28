@@ -91,4 +91,17 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/btnAtrasMenu"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#D52B1E"
+        android:text="Atrás"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

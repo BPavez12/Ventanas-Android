@@ -9,14 +9,16 @@
     tools:context=".actividad_3">
 
     <!-- Boton de Atrás-->
+
     <Button
         android:id="@+id/btn_atras_recetas"
         android:layout_width="100dp"
         android:layout_height="48dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#D52B1E"
         android:text="Atrás"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

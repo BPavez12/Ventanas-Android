@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_chile"
-    tools:context=".EmpanadaDeQueso">
+    tools:context=".EmpanadaMarisco">
 
     <Button
-        android:id="@+id/btnRecetasEmpanadas"
+        android:id="@+id/btnRecetasAnteriores"
         android:layout_width="102dp"
         android:layout_height="43dp"
         android:backgroundTint="#D52B1E"
@@ -20,23 +20,23 @@
         tools:layout_editor_absoluteY="30dp" />
 
     <TextView
-        android:id="@+id/IngredientesEQueso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ingredientes:\n - 1 kilo de harina\n -120 gr de manteca o margarina\n - 1 cucharadita de Sal de Mar\n - 1 cucharadita de azucar\n - 1 taza de leche\n - 1 taza de agua\n - 200 gr de queso mantecoso\n - Aceite"
+        android:id="@+id/ingredientesEQueso"
+        android:layout_width="197dp"
+        android:layout_height="267dp"
+        android:text="Ingredientes:\n - 2 tarros de mariscos surtidos en conserva\n - 1 cebolla cortada en cubitos\n - 1 cdta de Ají de Color Gourmet\n - 4 masas de empanadas\n - 1 cdta de Ajo en Polvo Gourmet\n - 1 huevo batido\n - 600 g de harina\n - 1 cucharadita de Sal de Mar Gourmet\n - 120 g de manteca vegetal (derretida y tibia)\n - 40 ml de vino blanco\n - Agua tibia\n "
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintHorizontal_bias="0.919"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="184dp" />
+        tools:layout_editor_absoluteY="164dp" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Empanada de Queso"
+        android:text="Empanada de Marisco"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -46,20 +46,21 @@
         tools:layout_editor_absoluteY="106dp" />
 
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="375dp"
-        android:layout_height="313dp"
-        android:layout_marginBottom="28dp"
-        android:text="Preparar la masa: Mezclar harina con manteca, sal, azúcar y leche. Agregar agua poco a poco hasta formar una masa lisa. Amasar, tapar y dejar reposar 30 minutos.\n \nArmar las empanadas: Estirar la masa a 0,3 cm, cortar círculos de 10 cm, poner un cubo de queso al centro y cerrar en forma de media luna, sellando los bordes con un tenedor.\n \nFreír: Cocinar en aceite caliente hasta que estén doradas por ambos lados. Escurrir en papel absorbente.\n \nServir: Consumir de inmediato, opcionalmente espolvorear con azúcar flor."
+        android:id="@+id/textView11"
+        android:layout_width="376dp"
+        android:layout_height="261dp"
+        android:layout_marginBottom="24dp"
+        android:text="Preparar la masa: Mezclar harina, sal y manteca hasta formar migas. Agregar vino y agua tibia poco a poco hasta tener una masa blanda pero no pegajosa. Amasar 5 minutos hasta que esté lisa y elástica. Reposar tapada. Estirar a 0,5 cm y cortar círculos de 15 cm.\n \n Preparar el relleno: Sofreír cebolla con ají de color y ajo en polvo. Agregar mariscos y cocinar 1 minuto más. Retirar del fuego.\n \n Armar las empanadas: Poner relleno al centro, doblar la masa y sellar los bordes. Pintar con huevo batido.\n \n Hornear: Cocinar a 180 °C por 25 minutos hasta que estén doradas.\n \n Servir: Consumir calientes.\n "
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Preparación:"
@@ -67,8 +68,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="355dp" />
-
+        tools:layout_editor_absoluteY="409dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
