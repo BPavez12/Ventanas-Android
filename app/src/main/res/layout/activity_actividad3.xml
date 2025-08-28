@@ -5,88 +5,103 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_chile"
     tools:context=".actividad_3">
 
+    <!-- Boton de Atrás-->
     <Button
-        android:id="@+id/btnEpanadaQueso"
-        android:layout_width="147dp"
-        android:layout_height="61dp"
-        android:text="Ver receta"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btn_atras_recetas"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#D52B1E"
+        android:text="Atrás"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="194dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:text="Empanada de queso"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnEpanadaQueso"
+        app:layout_constraintTop_toBottomOf="@+id/btn_atras_recetas"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="60dp"/>
+
+    <!-- Empanada de Queso -->
+    <Button
+        android:id="@+id/btnEpanadaQueso"
+        android:layout_width="147dp"
+        android:layout_height="61dp"
+        android:text="Ver receta"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="#D52B1E"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Empanada de Pino -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empanada de pino"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btnEpanadaQueso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
 
     <Button
         android:id="@+id/btnEmpanadaPino"
         android:layout_width="146dp"
         android:layout_height="57dp"
         android:text="Ver receta"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
+        android:backgroundTint="#D52B1E"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="358dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
 
+    <!-- Empanada de Marisco -->
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Empanada de pino"
+        android:text="Empanada de marisco"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnEmpanadaPino"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmpanadaPino"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="40dp"/>
 
     <Button
         android:id="@+id/btnEmpanadaMarisco"
         android:layout_width="145dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="160dp"
         android:text="Ver receta"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D52B1E"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Empanada de marisco"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnEmpanadaMarisco"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btn_atras_recetas"
-        android:layout_width="95dp"
-        android:layout_height="36dp"
-        android:text="Atras"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="34dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

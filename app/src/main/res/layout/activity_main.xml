@@ -5,64 +5,54 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_chile"
     tools:context=".MainActivity"
     android:padding="24dp">
 
-    <!-- Título (TeaShop!) -->
-
-    <!-- Etiqueta: Correo Electronico -->
-
-    <!-- Campo: Email -->
-
-    <!-- Etiqueta: Contraseña -->
-
-    <!-- Campo: Password -->
-
-    <!-- Botón Registrar (izquierda) -->
-
-    <!-- Botón Login (derecha) -->
-
-    <!-- Link: Olvidé mi contraseña -->
-
+    <!-- Texto de Bienvenida e indicaciones -->
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="144dp"
         android:text="Recetas S18!"
-        android:textSize="48sp"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/verRecetas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
-
-    <Button
-        android:id="@+id/verRecetas"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="236dp"
-        android:text="Ver ahora!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <TextView
         android:id="@+id/informacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="recetas de cocina para un buen \n              18 de septimbre"
-        android:textColor="#090101"
+        android:text="Recetas de cocina para un buen \n         18 de Septiembre 2025"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/verRecetas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo"
-        app:layout_constraintVertical_bias="0.603" />
+        app:layout_constraintVertical_bias="0.924" />
+
+    <!-- Boton para vizualizar las recetas -->
+    <Button
+        android:id="@+id/verRecetas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
+        android:text="Ver ahora!"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D52B1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
