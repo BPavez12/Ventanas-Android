@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmpanadaDeQueso">
+
+    <Button
+        android:id="@+id/btnRecetasEmpanadas"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:text="Atras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/IngredientesEQueso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredientes:\n - 1 kilo de harina\n -120 gr de manteca o margarina\n - 1 cucharadita de Sal de Mar\n - 1 cucharadita de azucar\n - 1 taza de leche\n - 1 taza de agua\n - 200 gr de queso mantecoso\n - Aceite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empanada de Queso"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="375dp"
+        android:layout_height="313dp"
+        android:layout_marginBottom="28dp"
+        android:text="Preparar la masa: Mezclar harina con manteca, sal, azúcar y leche. Agregar agua poco a poco hasta formar una masa lisa. Amasar, tapar y dejar reposar 30 minutos.\n \nArmar las empanadas: Estirar la masa a 0,3 cm, cortar círculos de 10 cm, poner un cubo de queso al centro y cerrar en forma de media luna, sellando los bordes con un tenedor.\n \nFreír: Cocinar en aceite caliente hasta que estén doradas por ambos lados. Escurrir en papel absorbente.\n \nServir: Consumir de inmediato, opcionalmente espolvorear con azúcar flor."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preparación:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="355dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
