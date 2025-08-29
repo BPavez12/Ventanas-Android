@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_chile"
+    tools:context=".VinoConFrutas">
+
+    <Button
+        android:id="@+id/btnRecetaAtrass"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#D52B1E"
+        android:text="Atras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/ingredientesVinoFruta"
+        android:layout_width="224dp"
+        android:layout_height="306dp"
+        android:text="Ingredientes:\n Jarabe:\n - 2 tazas de azúcar\n - 1 taza de agua\n Vino con Frutillas o Borgoña:\n - 200 g de frutillas picadas\n - 3/4 taza de jarabe\n - 1 medida de pisco\n - Hielo a gusto\n - 1 botella de vino tinto\n Ponche o Vino con Chirimoya:\n - 1 chirimoya\n - 3/4 taza de jarabe\n - 1 medida de pisco\n - Hielo a gusto\n - 1 vino blanco\n "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vino con Frutas"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="387dp"
+        android:layout_height="227dp"
+        android:layout_marginBottom="24dp"
+        android:text="Jarabe: Poner el agua y azúcar en un sartén y revolver hasta que se disuelva el azúcar. Reservar el jarabe en un jarro.\nVino con Frutillas o Borgoña: Picar las frutillas y ponerlas en un bowl. Dejar macerar alrededor de 30 minutos con el jarabe hecho previamente. Echar las frutillas en un jarro, junto con hielo, vino y medida de pisco. \n Ponche de Chirimoya: Picar las chirimoyas y ponerlas en un bowl. Dejar macerar con jarabe alrededor de 30 minutos. Echar chirimoyas en un jarro, junto con hielo, vino y medida de pisco. "
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preparación:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="451dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
