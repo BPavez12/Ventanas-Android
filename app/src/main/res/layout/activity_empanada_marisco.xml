@@ -20,7 +20,7 @@
         tools:layout_editor_absoluteY="30dp" />
 
     <TextView
-        android:id="@+id/ingredientesEQueso"
+        android:id="@+id/ingredientesEMarisco"
         android:layout_width="197dp"
         android:layout_height="267dp"
         android:text="Ingredientes:\n - 2 tarros de mariscos surtidos en conserva\n - 1 cebolla cortada en cubitos\n - 1 cdta de Ají de Color Gourmet\n - 4 masas de empanadas\n - 1 cdta de Ajo en Polvo Gourmet\n - 1 huevo batido\n - 600 g de harina\n - 1 cucharadita de Sal de Mar Gourmet\n - 120 g de manteca vegetal (derretida y tibia)\n - 40 ml de vino blanco\n - Agua tibia\n "
