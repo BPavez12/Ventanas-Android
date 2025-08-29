@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_chile"
+    tools:context=".AnticuchoDePolloYVerduras">
+
+    <Button
+        android:id="@+id/btnVerParrilla"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#D52B1E"
+        android:text="Atras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/ingredientesPolloVerdura"
+        android:layout_width="217dp"
+        android:layout_height="363dp"
+        android:text="Ingredientes:\n - 500 g de pechuga de pollo\n - 1/4 cda de Sal de Mar Gourmet\n - 1 cdta de Pimienta negra molida Gourmet\n - 1 cda de Ajo en polvo Gourmet\n - 1/4 cda de Pimentón Páprika en polvo Gourmet\n - 1/4 cda de Romero deshidratado Gourmet\n - 1/4 cda de Tomillo en hojas Gourmet\n - 2 cdas de aceite\n - 1 cda de vinagre\n - Cebolla morada\n - Pimentón verde\n - Tomate cherry\n "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="345dp"
+        android:layout_height="86dp"
+        android:text="Anticucho de Pollo y Verduras"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="390dp"
+        android:layout_height="215dp"
+        android:layout_marginBottom="28dp"
+        android:text="Preparación:\n Pica la pechuga de pollo en cubos de 2 cm aproximadamente, ponla en un bowl y condimenta con todos los ingredientes (menos las verduras).\n \n Arma las brochetas intercalando en palos de bamboo trozos de pollo, cebolla morada, pimentón y tomate cherry.\n \n Cocina a la parrilla o a plancha de 4 a 5 minutos de cada lado y disfruta.\n "
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

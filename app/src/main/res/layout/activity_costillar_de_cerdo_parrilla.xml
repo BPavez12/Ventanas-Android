@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_chile"
+    tools:context=".CostillarDeCerdoParrilla">
+
+    <Button
+        android:id="@+id/btnVerParrilla2"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#D52B1E"
+        android:text="Atras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/ingredientesCerdo"
+        android:layout_width="217dp"
+        android:layout_height="363dp"
+        android:text="Ingredientes:\n - 1 kilo de costillar de cerdo\n \n Adobo:\n - 3 1/2 cucharadas de miel\n - 3 cucharadas de mostaza\n - 3 cucharadas de vinagre blanco\n - 1 1/2 cucharadita de Ají Color Gourmet\n - 1/2 cucharadita de Comino Molido Gourmet\n - 2 cucharadas de Orégano Entero Gourmet\n - 1 cucharadita de Pimienta Blanca Gourmet\n - 1 1/2 cucharadita de Sal de Mar Gourmet\n - 3/4 taza de vino blanco\n "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="345dp"
+        android:layout_height="86dp"
+        android:text="Costillar de Cerdo a la Parrilla"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="384dp"
+        android:layout_height="230dp"
+        android:layout_marginBottom="24dp"
+        android:text="Preparación:\n Mezclar todos los ingredientes del adobo en una fuente grande. Agregar el costillar y con las manos, embetunarlo por todos lados. Dejar reposar por al menos 2 horas antes de cocinarlo.\n \n Prender la parrilla y cuando esté caliente, sacar el costillar del adobo y ponerlo sobre la parrilla.\n \n Cocinar por ambos lados hasta que esté cocido al medio y dorado por ambos lados; alrededor de 45 minutos; se puede pincelar con el adobo mientras se cocina.\n \n Partir y servir acompañado de ensalada chilena.\n "
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Eccomerce">
         <activity
+            android:name=".actividad5"
+            android:exported="false" />
+        <activity
+            android:name=".CostillarDeCerdoParrilla"
+            android:exported="false" />
+        <activity
+            android:name=".AnticuchoDePolloYVerduras"
+            android:exported="false" />
+        <activity
+            android:name=".PolloAsadoAlLimon"
+            android:exported="false" />
+        <activity
             android:name=".MangoSour"
             android:exported="false" />
         <activity
