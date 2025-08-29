@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_chile"
+    tools:context=".EmpanadaPino">
+
+    <Button
+        android:id="@+id/btnRecetasAnteriores2"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#D52B1E"
+        android:text="Atras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/ingredientesEMarisco2"
+        android:layout_width="187dp"
+        android:layout_height="582dp"
+        android:text="Ingredientes:\n \n Masa:\n - 600 g de harina\n - 1 cucharadita de sal\n - 120 g de manteca vegetal (derretida y tibia)\n - 40 ml de vino blanco\n - Agua tibia\n \n Relleno:\n - 1 cucharada de aceite vegetal\n - 2 cebollas picadas en cubos finos\n - 500 g de carne en cubos bien pequeños (posta rosada o negra)\n - 1/2 cucharadita de Ajo en Polvo Gourmet\n - 1 cucharadita de Ají de Color Gourmet\n - 1 cucharadita de Orégano Entero Gourmet\n - 1 cucharadita de Comino Molido Gourmet\n - Sal\n - Pimienta Negra Molida Gourmet\n - 24 pasas rubias (opcional)\n - 12 aceitunas negras\n - 3 huevos duros cortados en cuartos\n - 2 huevos levemente batidos para pintar\n "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empanada\nde Pino"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="214dp"
+        android:layout_height="470dp"
+        android:layout_marginBottom="28dp"
+        android:text="Preparar la masa: Mezclar harina y sal con manteca hasta formar migas. Agregar vino y agua tibia poco a poco hasta obtener una masa blanda pero no pegajosa. Amasar 5 minutos hasta que esté lisa y elástica. Reposar tapada mientras se prepara el relleno.\n \n Preparar el pino: Calentar aceite, agregar cebolla y cocinar hasta transparente. Añadir carne, ajo en polvo, ají de color, orégano y comino; cocinar hasta que la carne esté lista. Sazonar con sal y pimienta. Dejar enfriar.\n \n Armar las empanadas: Estirar la masa a 0,5 cm, cortar círculos de 15 cm. Rellenar con pino, 2 pasas, una aceituna y huevo duro. Humedecer bordes con agua, cerrar y sellar. Pintar con huevo batido, pinchar 2 veces y hornear a 180 ºC por 40 minutos o hasta dorar.\n "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
