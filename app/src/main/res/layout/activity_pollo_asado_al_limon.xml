@@ -8,54 +8,82 @@
     android:background="@drawable/fondo_chile"
     tools:context=".PolloAsadoAlLimon">
 
-    <Button
+    <!-- Botón Atrás -->
+    <ImageButton
         android:id="@+id/btnVerRecAnt"
-        android:layout_width="102dp"
-        android:layout_height="43dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:backgroundTint="#D52B1E"
-        android:text="Atras"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Atrás"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="30dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
 
-    <TextView
-        android:id="@+id/ingredientesPolloLimon"
-        android:layout_width="217dp"
-        android:layout_height="286dp"
-        android:text="Ingredientes:\n - 4 trutros de pollo con su piel\n - 6 limones\n - 4 dientes de ajo\n - 1 taza de salsa de ají chileno\n - 1 cda de Orégano Entero Gourmet\n - 3 cdas de Condimento para Pollo Gourmet\n - 2 cdas de aceite\n - Pimienta Negra Molida Gourmet\n - Sal\n "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.989"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="123dp" />
-
+    <!-- Título -->
     <TextView
         android:id="@+id/textView32"
-        android:layout_width="345dp"
-        android:layout_height="86dp"
-        android:text="Pollo Asado \ncon Limon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pollo Asado con Limón"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintTop_toBottomOf="@id/btnVerRecAnt"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="82dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
 
+    <!-- Imagen del Pollo -->
+    <ImageView
+        android:id="@+id/imgPolloLimon"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/pollo_asado_con_limon"
+    android:scaleType="centerCrop"
+    android:contentDescription="Imagen de Pollo Asado con Limón"
+    app:layout_constraintTop_toBottomOf="@id/textView32"
+    app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Ingredientes con Scroll -->
+    <ScrollView
+        android:id="@+id/scrollIngredientesPollo"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@id/imgPolloLimon"
+        app:layout_constraintBottom_toBottomOf="@id/imgPolloLimon"
+        app:layout_constraintStart_toEndOf="@id/imgPolloLimon"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/ingredientesPolloLimon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredientes:\n - 4 trutros de pollo con su piel\n - 6 limones\n - 4 dientes de ajo\n - 1 taza de salsa de ají chileno\n - 1 cda de Orégano Entero Gourmet\n - 3 cdas de Condimento para Pollo Gourmet\n - 2 cdas de aceite\n - Pimienta Negra Molida Gourmet\n - Sal"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </ScrollView>
+
+    <!-- Preparación -->
     <TextView
         android:id="@+id/textView33"
-        android:layout_width="391dp"
-        android:layout_height="317dp"
-        android:layout_marginBottom="16dp"
-        android:text="Preparación:\n Exprimir los limones y juntar el jugo en una licuadora junto con el ajo, salsa de ají chilena, Orégano Entero Gourmet, Condimento para Pollo Gourmet y el aceite.\n \n Mezclar la pasta de ají por todos lados de los trutros y dejar macerando durante la noche (el mínimo de tiempo que se debe macerar son 2 horas).\n \n Poner los trutros sobre la parrilla (reservando la marinada), condimentados a gusto con Pimienta Negra Molida Gourmet y sal, con la piel hacia arriba. Una vez dorados dar vuelta.\n \n Durante la cocción de los trutros, pincelarlos por ambos lados con una brocha con la marinada para lograr un sabor más intenso.\n \n Cocinar los trutros en la parrilla hasta que el pollo esté cocido y la piel crocante y dorada.\n "
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Preparación:\n\nExprimir los limones y juntar el jugo en una licuadora junto con el ajo, salsa de ají chilena, Orégano Entero Gourmet, Condimento para Pollo Gourmet y el aceite.\n\nMezclar la pasta de ají por todos lados de los trutros y dejar macerando durante la noche (mínimo 2 horas).\n\nPoner los trutros sobre la parrilla (reservando la marinada), condimentados a gusto con Pimienta Negra Molida Gourmet y sal, con la piel hacia arriba. Una vez dorados, dar vuelta.\n\nDurante la cocción, pincelarlos con la marinada para lograr más sabor.\n\nCocinar hasta que el pollo esté cocido y la piel crocante y dorada."
         android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgPolloLimon"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

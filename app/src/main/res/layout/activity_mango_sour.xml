@@ -8,30 +8,20 @@
     android:background="@drawable/fondo_chile"
     tools:context=".MangoSour">
 
-    <Button
+    <!-- Botón Atrás -->
+    <ImageButton
         android:id="@+id/btnTragoReceta"
-        android:layout_width="102dp"
-        android:layout_height="43dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:backgroundTint="#D52B1E"
-        android:text="Atras"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Atrás"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="30dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
 
-    <TextView
-        android:id="@+id/ingredientesMangoSour"
-        android:layout_width="396dp"
-        android:layout_height="138dp"
-        android:text="Ingredientes:\n - 1 1/2 taza de jugo de mango preparado con pulpa\n - 2 tazas de pisco\n - 3/4 taza de azúcar granulada\n - 1 taza de hielo\n - Azúcar granulada para decorar las copas\n - Rodajas de naranja para decorar las copas (opcional)\n "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="350dp" />
-
+    <!-- Título -->
     <TextView
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
@@ -40,24 +30,50 @@
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintTop_toBottomOf="@id/btnTragoReceta"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="87dp" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="357dp"
-        android:layout_height="177dp"
-        android:layout_marginBottom="24dp"
-        android:text="Poner todos los ingredientes en la juguera y batir por 1 minuto.\n \n En un plato poner azúcar. Mojar los bordes de una copa con agua y poner éstos sobre el azúcar.\n \n Servir el contenido de la juguera en cada una de las copas. Decorar cada copa con una rodaja de naranja.\n "
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="20dp" />
+
+    <!-- Imagen del trago -->
+    <ImageView
+        android:id="@+id/imgMangoSour"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/mango_sour"
+    android:scaleType="centerCrop"
+    android:contentDescription="Imagen de Mango Sour"
+    app:layout_constraintTop_toBottomOf="@id/textView25"
+    app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Ingredientes con Scroll -->
+
+    <!-- Texto Preparación -->
+
+    <ScrollView
+        android:id="@+id/scrollIngredientesMangoSour"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgMangoSour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imgMangoSour"
+        app:layout_constraintTop_toTopOf="@id/imgMangoSour"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/ingredientesMangoSour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredientes:\n - 1 1/2 taza de jugo de mango preparado con pulpa\n - 2 tazas de pisco\n - 3/4 taza de azúcar granulada\n - 1 taza de hielo\n - Azúcar granulada para decorar las copas\n - Rodajas de naranja para decorar las copas (opcional)\n"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </ScrollView>
 
     <TextView
         android:id="@+id/textView27"
@@ -67,8 +83,24 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintTop_toBottomOf="@id/imgMangoSour"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="495dp" />
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+
+    <!-- Preparación -->
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Poner todos los ingredientes en la juguera y batir por 1 minuto.\n\nEn un plato poner azúcar. Mojar los bordes de una copa con agua y poner éstos sobre el azúcar.\n\nServir el contenido de la juguera en cada una de las copas. Decorar cada copa con una rodaja de naranja."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textView27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

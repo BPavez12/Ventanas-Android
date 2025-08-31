@@ -9,18 +9,17 @@
     tools:context=".CostillarDeCerdoParrilla">
 
     <!-- Botón Atrás -->
-    <Button
+    <ImageButton
         android:id="@+id/btnVerParrilla2"
-        android:layout_width="102dp"
-        android:layout_height="43dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:backgroundTint="#D52B1E"
-        android:text="Atrás"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Atrás"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
 
     <!-- Título -->
     <TextView
@@ -40,31 +39,37 @@
     <!-- Imagen -->
     <ImageView
         android:id="@+id/imgAnticucho"
-        android:layout_width="165dp"
-        android:layout_height="204dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="168dp"
+        android:layout_height="238dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
         android:contentDescription="Imagen de costillar"
         android:scaleType="centerCrop"
         android:src="@drawable/costillas_de_cerdo"
-        app:layout_constraintTop_toBottomOf="@id/textView30"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView30" />
 
-    <!-- Ingredientes -->
-    <TextView
-        android:id="@+id/ingredientesCerdo"
+    <!-- Ingredientes con Scroll -->
+    <ScrollView
+        android:id="@+id/scrollIngredientes"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Ingredientes:\n - 1 kilo de costillar de cerdo\n \n Adobo:\n - 3 1/2 cucharadas de miel\n - 3 cucharadas de mostaza\n - 3 cucharadas de vinagre blanco\n - 1 1/2 cucharadita de Ají Color Gourmet\n - 1/2 cucharadita de Comino Molido Gourmet\n - 2 cucharadas de Orégano Entero Gourmet\n - 1 cucharadita de Pimienta Blanca Gourmet\n - 1 1/2 cucharadita de Sal de Mar Gourmet\n - 3/4 taza de vino blanco\n "
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        android:lineSpacingExtra="2dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
         app:layout_constraintTop_toBottomOf="@id/textView30"
         app:layout_constraintStart_toEndOf="@id/imgAnticucho"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp"/>
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/ingredientesCerdo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredientes:\n - 1 kilo de costillar de cerdo\n \n Adobo:\n - 3 1/2 cucharadas de miel\n - 3 cucharadas de mostaza\n - 3 cucharadas de vinagre blanco\n - 1 1/2 cucharadita de Ají Color Gourmet\n - 1/2 cucharadita de Comino Molido Gourmet\n - 2 cucharadas de Orégano Entero Gourmet\n - 1 cucharadita de Pimienta Blanca Gourmet\n - 1 1/2 cucharadita de Sal de Mar Gourmet\n - 3/4 taza de vino blanco\n "
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="2dp"/>
+    </ScrollView>
 
     <!-- Preparación -->
     <TextView

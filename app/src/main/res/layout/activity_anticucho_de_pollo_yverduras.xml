@@ -9,16 +9,18 @@
     tools:context=".AnticuchoDePolloYVerduras">
 
     <!-- Botón Atrás -->
-    <Button
+    <ImageButton
         android:id="@+id/btnVerParrilla"
-        android:layout_width="102dp"
-        android:layout_height="43dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:backgroundTint="#D52B1E"
-        android:text="Atrás"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Atrás"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"/>
+
 
     <!-- Título -->
     <TextView
@@ -47,25 +49,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView28" />
 
-    <!-- Ingredientes -->
-
-    <!-- Preparación -->
-
-    <TextView
-        android:id="@+id/ingredientesPolloVerdura"
-        android:layout_width="141dp"
-        android:layout_height="361dp"
+    <!-- Ingredientes con Scroll -->
+    <ScrollView
+        android:id="@+id/scrollIngredientes"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="20dp"
-        android:text="Ingredientes:\n - 500 g de pechuga de pollo\n - 1/4 cda de Sal de Mar Gourmet\n - 1 cdta de Pimienta negra molida Gourmet\n - 1 cda de Ajo en polvo Gourmet\n - 1/4 cda de Pimentón Páprika en polvo Gourmet\n - 1/4 cda de Romero deshidratado Gourmet\n - 1/4 cda de Tomillo en hojas Gourmet\n - 2 cdas de aceite\n - 1 cda de vinagre\n - Cebolla morada\n - Pimentón verde\n - Tomate cherry"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="@id/imgAnticucho"
+        app:layout_constraintBottom_toBottomOf="@id/imgAnticucho"
         app:layout_constraintStart_toEndOf="@id/imgAnticucho"
-        app:layout_constraintTop_toTopOf="@id/imgAnticucho" />
+        app:layout_constraintEnd_toEndOf="parent">
 
+        <TextView
+            android:id="@+id/ingredientesPolloVerdura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredientes:\n - 500 g de pechuga de pollo\n - 1/4 cda de Sal de Mar Gourmet\n - 1 cdta de Pimienta negra molida Gourmet\n - 1 cda de Ajo en polvo Gourmet\n - 1/4 cda de Pimentón Páprika en polvo Gourmet\n - 1/4 cda de Romero deshidratado Gourmet\n - 1/4 cda de Tomillo en hojas Gourmet\n - 2 cdas de aceite\n - 1 cda de vinagre\n - Cebolla morada\n - Pimentón verde\n - Tomate cherry"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </ScrollView>
+
+    <!-- Preparación -->
     <TextView
         android:id="@+id/textView29"
         android:layout_width="0dp"
@@ -76,11 +82,8 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgAnticucho"
-        app:layout_constraintVertical_bias="0.985" />
+        app:layout_constraintTop_toBottomOf="@id/imgAnticucho" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

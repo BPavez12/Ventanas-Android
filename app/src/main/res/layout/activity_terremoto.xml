@@ -8,55 +8,62 @@
     android:background="@drawable/fondo_chile"
     tools:context=".Terremoto">
 
-    <Button
+    <!-- Boton de Atras -->
+    <ImageButton
         android:id="@+id/btnRecetasTragos"
-        android:layout_width="102dp"
-        android:layout_height="43dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:backgroundTint="#D52B1E"
-        android:text="Atras"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Atrás"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="30dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
 
+    <!-- Titulo -->
     <TextView
-        android:id="@+id/ingredientesTerremoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ingredientes:\n - 700 ml de vino pipeño o blanco\n - 100 ml de granadina\n - 200 ml de helado de piña, más para servir\n - Opcional: chorrito de pisco\n "
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="353dp" />
-
-    <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/terremotoTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Terremoto"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="87dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
 
+    <!-- Imagen Terremoto -->
+    <ImageView
+        android:id="@+id/imgTerremoto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/terremoto"
+        android:contentDescription="Imagen Terremoto"
+        app:layout_constraintTop_toBottomOf="@id/terremotoTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Ingredientes de Terremoto -->
     <TextView
-        android:id="@+id/textView14"
-        android:layout_width="387dp"
-        android:layout_height="124dp"
-        android:layout_marginBottom="68dp"
-        android:text="Poner todos los ingredientes en una jarra y revolver hasta integrar.\n \n Agregar helado de piña en cada vaso, servir y disfrutar.\n "
+        android:id="@+id/ingredientesTerremoto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ingredientes:\n- 700 ml de vino pipeño o blanco\n- 100 ml de granadina\n- 200 ml de helado de piña, más para servir\n- Opcional: chorrito de pisco"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgTerremoto"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
 
+    <!-- Preparacion -->
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
@@ -65,8 +72,27 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintTop_toBottomOf="@id/ingredientesTerremoto"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="498dp" />
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Texto de Preparacion -->
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Poner todos los ingredientes en una jarra y revolver hasta integrar.\n\nAgregar helado de piña en cada vaso, servir y disfrutar."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textView15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
