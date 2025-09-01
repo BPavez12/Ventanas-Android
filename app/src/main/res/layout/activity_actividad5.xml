@@ -1,119 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_chile"
-    tools:context=".actividad5">
+    tools:context=".actividad_3">
 
-    <Button
+    <!-- Botón de Atrás -->
+    <ImageButton
         android:id="@+id/btnRetrocederAnterior"
-        android:layout_width="100dp"
+        android:layout_width="48dp"
         android:layout_height="48dp"
+        android:src="@drawable/baseline_arrow_back_24"
         android:backgroundTint="#D52B1E"
-        android:text="Atrás"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
-        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/volver_atras"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
 
+    <!-- Empanada de Queso -->
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/tvEmpanadaQueso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="8dp"
-        android:text="Anticucho de Pollo\ny Verduras"
-        android:textAlignment="center"
+        android:text="Empanada de queso"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnPolloVerdura"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRetrocederAnterior"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_atras_recetas" />
-
-    <Button
-        android:id="@+id/btnPolloVerdura"
-        android:layout_width="147dp"
-        android:layout_height="61dp"
-        android:backgroundTint="#D52B1E"
-        android:text="Ver receta"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        android:layout_marginTop="24dp" />
 
+    <ImageButton
+        android:id="@+id/btnEmpanadaQueso"
+        android:layout_width="118dp"
+        android:layout_height="117dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_queso"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmpanadaQueso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Empanada de Pino -->
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/tvEmpanadaPino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="8dp"
-        android:text="Costillar de Cerdo\na la parrilla"
-        android:textAlignment="center"
+        android:text="Empanada de pino"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnCerdo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmpanadaQueso"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEpanadaQueso" />
-
-    <Button
-        android:id="@+id/btnCerdo"
-        android:layout_width="146dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="336dp"
-        android:backgroundTint="#D52B1E"
-        android:text="Ver receta"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="24dp" />
 
-    <Button
-        android:id="@+id/btnPolloLimon"
-        android:layout_width="145dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="84dp"
-        android:backgroundTint="#D52B1E"
-        android:text="Ver receta"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/btnEmpanadaPino"
+        android:layout_width="120dp"
+        android:layout_height="118dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_pino"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmpanadaPino"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.647" />
+        android:layout_marginTop="12dp" />
 
+    <!-- Empanada de Marisco -->
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/tvEmpanadaMarisco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginBottom="272dp"
-        android:text="Pollo Asado al Limon"
+        android:text="Empanada de marisco"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmpanadaPino"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEmpanadaPino" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <ImageButton
+        android:id="@+id/btnEmpanadaMarisco"
+        android:layout_width="121dp"
+        android:layout_height="124dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_marisco"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmpanadaMarisco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

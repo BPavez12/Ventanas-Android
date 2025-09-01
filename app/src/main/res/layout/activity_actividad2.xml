@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,100 +9,96 @@
     android:background="@drawable/fondo_chile"
     tools:context=".actividad_2">
 
-    <!-- Recetas de Empanadas, Parrillas y Tragos -->
-    <Button
-        android:id="@+id/button"
-        android:layout_width="268dp"
-        android:layout_height="73dp"
-        android:layout_marginBottom="88dp"
-        android:text="Ver recetas de empanadas"
-        android:textColor="#FFFFFF"
+    <!-- Botón para regresar al menú -->
+    <ImageButton
+        android:id="@+id/btnRetrocederAnterior"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/baseline_arrow_back_24"
         android:backgroundTint="#D52B1E"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:contentDescription="@string/volver_atras"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="267dp"
-        android:layout_height="68dp"
-        android:layout_marginBottom="92dp"
-        android:text="Ver recetas de parrilla"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#D52B1E"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="259dp"
-        android:layout_height="71dp"
-        android:layout_marginBottom="156dp"
-        android:text="Ver recetas de tragos"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#D52B1E"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <!-- Textos de Empanadas, Parrillas y Tragos -->
+    <!-- Empanadas -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvEmpanadas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
         android:text="Empanadas"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/btnRetrocederAnterior"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="24dp" />
 
+    <ImageButton
+        android:id="@+id/btnEmpanadas"
+        android:layout_width="119dp"
+        android:layout_height="89dp"
+        android:src="@drawable/btn_empanada"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmpanadas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Parrilla -->
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvParrilla"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Parrilla"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmpanadas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginTop="24dp" />
 
+    <ImageButton
+        android:id="@+id/btnParrilla"
+        android:layout_width="119dp"
+        android:layout_height="89dp"
+        android:src="@drawable/btn_asado"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/tvParrilla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Tragos -->
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvTragos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:text="Tragos"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnAtrasMenu"
-        android:layout_width="112dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="36dp"
-        android:backgroundTint="#D52B1E"
-        android:text="Atrás"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/btnParrilla"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <ImageButton
+        android:id="@+id/btnTragos"
+        android:layout_width="119dp"
+        android:layout_height="89dp"
+        android:src="@drawable/btn_tragos"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/tvTragos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

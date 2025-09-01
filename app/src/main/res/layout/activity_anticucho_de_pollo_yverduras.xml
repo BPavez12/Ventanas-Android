@@ -2,85 +2,80 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_chile"
     tools:context=".AnticuchoDePolloYVerduras">
 
-    <!-- Botón Atrás -->
-    <Button
-        android:id="@+id/btnVerParrilla"
-        android:layout_width="102dp"
-        android:layout_height="43dp"
+    <ImageButton
+        android:id="@+id/btnAtrasAnticucho"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/baseline_arrow_back_24"
         android:backgroundTint="#D52B1E"
-        android:text="Atrás"
-        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/volver_atras"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"/>
-
-    <!-- Título -->
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Anticucho de Pollo y Verduras"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/btnVerParrilla"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"/>
 
-    <!-- Imagen -->
+    <TextView
+        android:id="@+id/tituloAnticucho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_anticucho"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnAtrasAnticucho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+
     <ImageView
         android:id="@+id/imgAnticucho"
-        android:layout_width="202dp"
-        android:layout_height="271dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="Imagen de anticucho"
-        android:scaleType="centerCrop"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:src="@drawable/anticucho_de_pollo_y_verduras"
+        android:contentDescription="@string/titulo_anticucho"
+        app:layout_constraintTop_toBottomOf="@id/tituloAnticucho"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView28" />
-
-    <!-- Ingredientes -->
-
-    <!-- Preparación -->
-
-    <TextView
-        android:id="@+id/ingredientesPolloVerdura"
-        android:layout_width="141dp"
-        android:layout_height="361dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="20dp"
-        android:text="Ingredientes:\n - 500 g de pechuga de pollo\n - 1/4 cda de Sal de Mar Gourmet\n - 1 cdta de Pimienta negra molida Gourmet\n - 1 cda de Ajo en polvo Gourmet\n - 1/4 cda de Pimentón Páprika en polvo Gourmet\n - 1/4 cda de Romero deshidratado Gourmet\n - 1/4 cda de Tomillo en hojas Gourmet\n - 2 cdas de aceite\n - 1 cda de vinagre\n - Cebolla morada\n - Pimentón verde\n - Tomate cherry"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@id/imgAnticucho"
-        app:layout_constraintTop_toTopOf="@id/imgAnticucho" />
+        android:layout_marginTop="16dp"/>
 
-    <TextView
-        android:id="@+id/textView29"
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Preparación:\n Pica la pechuga de pollo en cubos de 2 cm aproximadamente, ponla en un bowl y condimenta con todos los ingredientes (menos las verduras).\n\nArma las brochetas intercalando en palos de bamboo trozos de pollo, cebolla morada, pimentón y tomate cherry.\n\nCocina a la parrilla o a plancha de 4 a 5 minutos de cada lado y disfruta."
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/imgAnticucho"
-        app:layout_constraintVertical_bias="0.985" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ingredientesAnticucho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredientes_anticucho"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/preparacionAnticucho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/preparacion_anticucho"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
