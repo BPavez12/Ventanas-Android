@@ -26,32 +26,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="568dp"
         android:text="Terremoto"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnTerremoto"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_atras_recetas" />
-
-    <Button
-        android:id="@+id/btnTerremoto"
-        android:layout_width="147dp"
-        android:layout_height="61dp"
-        android:backgroundTint="#D52B1E"
-        android:text="Ver receta"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_atras_recetas" />
 
     <TextView
         android:id="@+id/textView23"
@@ -65,48 +49,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.556"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEpanadaQueso" />
-
-    <Button
-        android:id="@+id/btnVinoFruta"
-        android:layout_width="146dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="336dp"
-        android:backgroundTint="#D52B1E"
-        android:text="Ver receta"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnMangoSour"
-        android:layout_width="145dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="84dp"
-        android:backgroundTint="#D52B1E"
-        android:text="Ver receta"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676" />
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:layout_marginBottom="252dp"
+        android:layout_marginBottom="200dp"
         android:text="Mango Sour"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -115,4 +67,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEmpanadaPino" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="143dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/terremotobotom"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="132dp"
+        android:layout_height="112dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/vinofrutasBotom"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="378dp"/>
+
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="129dp"
+        android:layout_height="125dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mangoSourbotom"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="541dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,88 +26,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="556dp"
         android:text="Anticucho de Pollo\ny Verduras"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnPolloVerdura"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_atras_recetas" />
-
-    <Button
-        android:id="@+id/btnPolloVerdura"
-        android:layout_width="147dp"
-        android:layout_height="61dp"
-        android:backgroundTint="#D52B1E"
-        android:text="Ver receta"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_atras_recetas" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="336dp"
         android:text="Costillar de Cerdo\na la parrilla"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnCerdo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEpanadaQueso" />
-
-    <Button
-        android:id="@+id/btnCerdo"
-        android:layout_width="146dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="336dp"
-        android:backgroundTint="#D52B1E"
-        android:text="Ver receta"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnPolloLimon"
-        android:layout_width="145dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="84dp"
-        android:backgroundTint="#D52B1E"
-        android:text="Ver receta"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.647" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEpanadaQueso" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:layout_marginBottom="272dp"
+        android:layout_marginBottom="172dp"
         android:text="Pollo Asado al Limon"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -116,4 +69,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEmpanadaPino" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="171dp"
+        android:layout_height="125dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/anticuchos_polloVerdurasbotom"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="159dp"
+        android:layout_height="109dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/parrillabotom"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="139dp"
+        android:layout_height="152dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/polloLimonbotom"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="559dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

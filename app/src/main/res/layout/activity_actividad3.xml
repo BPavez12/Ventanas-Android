@@ -40,21 +40,7 @@
 
     <!-- Empanada de Pino -->
 
-    <Button
-        android:id="@+id/btnEpanadaQueso"
-        android:layout_width="147dp"
-        android:layout_height="61dp"
-        android:backgroundTint="#D52B1E"
-        android:text="Ver receta"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+    <!-- Empanada de Marisco -->
 
     <TextView
         android:id="@+id/textView5"
@@ -64,56 +50,51 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/btnEpanadaQueso"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp"/>
-
-    <!-- Empanada de Marisco -->
-
-    <Button
-        android:id="@+id/btnEmpanadaPino"
-        android:layout_width="146dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="336dp"
-        android:backgroundTint="#D52B1E"
-        android:text="Ver receta"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="318dp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
         android:text="Empanada de marisco"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEmpanadaPino" />
+        tools:layout_editor_absoluteY="509dp" />
 
-    <Button
-        android:id="@+id/btnEmpanadaMarisco"
-        android:layout_width="145dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="84dp"
-        android:backgroundTint="#D52B1E"
-        android:text="Ver receta"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="118dp"
+        android:layout_height="117dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701" />
+        tools:layout_editor_absoluteY="189dp"
+        android:src="@drawable/empanada_quesobotom"
+        android:scaleType="fitCenter"/>
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="120dp"
+        android:layout_height="118dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="364dp"
+        android:src="@drawable/empanada_pinobotom"
+        android:scaleType="fitCenter"/>
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="121dp"
+        android:layout_height="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="559dp"
+        android:src="@drawable/empanada_mariscobotom"
+        android:scaleType="fitCenter"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
