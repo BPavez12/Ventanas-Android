@@ -15,11 +15,12 @@
 
     <ImageButton
         android:id="@+id/recetaCrear"
-        android:layout_width="175dp"
+        android:layout_width="170dp"
         android:layout_height="115dp"
         android:adjustViewBounds="true"
         android:background="#0039A6"
         android:scaleType="fitCenter"
+        android:padding="6dp"
         android:src="@drawable/addreceta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,15 +31,16 @@
 
     <ImageButton
         android:id="@+id/recetasTragos"
-        android:layout_width="175dp"
+        android:layout_width="170dp"
         android:layout_height="115dp"
         android:adjustViewBounds="true"
         android:background="#0039A6"
+        android:padding="6dp"
         android:scaleType="fitCenter"
         android:src="@drawable/variedadestragos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.714" />
@@ -59,11 +61,13 @@
 
     <TextView
         android:id="@+id/informacion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="413dp"
+        android:layout_height="86dp"
         android:layout_marginTop="20dp"
         android:background="#0039A6"
+        android:padding="5dp"
         android:text="@string/recetas_de_cocina_para_un_buen_n_18_de_septiembre_2025"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -73,25 +77,27 @@
 
     <ImageButton
         android:id="@+id/recetasEmpanadas"
-        android:layout_width="175dp"
+        android:layout_width="170dp"
         android:layout_height="115dp"
         android:adjustViewBounds="true"
         android:background="#0039A6"
+        android:padding="6dp"
         android:scaleType="fitCenter"
         android:src="@drawable/variedadesempanadas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.478" />
 
     <ImageButton
         android:id="@+id/recetasParrillas"
-        android:layout_width="175dp"
+        android:layout_width="170dp"
         android:layout_height="115dp"
         android:adjustViewBounds="true"
         android:background="#0039A6"
+        android:padding="6dp"
         android:scaleType="fitCenter"
         android:src="@drawable/variedadparrilla"
         app:layout_constraintBottom_toBottomOf="parent"
