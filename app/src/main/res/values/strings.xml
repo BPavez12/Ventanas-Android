@@ -1,3 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- General -->
     <string name="app_name">eccomerce</string>
+    <string name="volver_atras">Atrás</string>
+
+    <!-- Anticucho de Pollo y Verduras -->
+    <string name="titulo_anticucho">Anticucho de Pollo y Verduras</string>
+    <string name="ingredientes_anticucho">
+        Ingredientes:\n
+        - 500 g de pechuga de pollo\n
+        - 1/4 cda de Sal de Mar Gourmet\n
+        - 1 cdta de Pimienta negra molida Gourmet\n
+        - 1 cda de Ajo en polvo Gourmet\n
+        - 1/4 cda de Pimentón Páprika en polvo Gourmet\n
+        - 1/4 cda de Romero deshidratado Gourmet\n
+        - 1/4 cda de Tomillo en hojas Gourmet\n
+        - 2 cdas de aceite\n
+        - 1 cda de vinagre\n
+        - Cebolla morada\n
+        - Pimentón verde\n
+        - Tomate cherry
+    </string>
+    <string name="preparacion_anticucho">
+        Preparación:\n
+        Pica la pechuga de pollo en cubos de 2 cm aproximadamente, ponla en un bowl y condimenta con todos los ingredientes (menos las verduras).\n\n
+        Arma las brochetas intercalando en palos de bamboo trozos de pollo, cebolla morada, pimentón y tomate cherry.\n\n
+        Cocina a la parrilla o a plancha de 4 a 5 minutos de cada lado y disfruta.
+    </string>
+
+    <!-- Costillar de Cerdo a la Parrilla -->
+    <string name="titulo_costillar">Costillar de Cerdo a la Parrilla</string>
+    <string name="ingredientes_costillar">
+        Ingredientes:\n
+        - 1 kilo de costillar de cerdo\n\n
+        Adobo:\n
+        - 3 1/2 cucharadas de miel\n
+        - 3 cucharadas de mostaza\n
+        - 3 cucharadas de vinagre blanco\n
+        - 1 1/2 cucharadita de Ají Color Gourmet\n
+        - 1/2 cucharadita de Comino Molido Gourmet\n
+        - 2 cucharadas de Orégano Entero Gourmet\n
+        - 1 cucharadita de Pimienta Blanca Gourmet\n
+        - 1 1/2 cucharadita de Sal de Mar Gourmet\n
+        - 3/4 taza de vino blanco
+    </string>
+    <string name="preparacion_costillar">
+        Preparación:\n
+        Mezclar todos los ingredientes del adobo en una fuente grande. Agregar el costillar y con las manos, embetunarlo por todos lados. Dejar reposar por al menos 2 horas antes de cocinarlo.\n\n
+        Prender la parrilla y cuando esté caliente, sacar el costillar del adobo y ponerlo sobre la parrilla.\n\n
+        Cocinar por ambos lados hasta que esté cocido al medio y dorado por ambos lados; alrededor de 45 minutos; se puede pincelar con el adobo mientras se cocina.\n\n
+        Partir y servir acompañado de ensalada chilena.
+    </string>
+
+    <!-- Empanada de Queso -->
+    <string name="titulo_empanada_queso">Empanada de Queso</string>
+    <string name="ingredientes_empanada_queso">
+        Ingredientes:\n
+        - 600 g de harina\n
+        - 1 cucharadita de sal\n
+        - 120 g de manteca vegetal (derretida y tibia)\n
+        - 40 ml de vino blanco\n
+        - Agua tibia\n
+        - 400 g de queso mantecoso\n
+        - 1 huevo batido
+    </string>
+    <string name="preparacion_empanada_queso">
+        Preparación:\n
+        Preparar la masa: Mezclar harina, sal y manteca hasta formar migas. Agregar vino y agua tibia poco a poco hasta tener una masa blanda pero no pegajosa. Amasar 5 minutos hasta que esté lisa y elástica. Reposar tapada. Estirar a 0,5 cm y cortar círculos de 15 cm.\n\n
+        Armar: Colocar un trozo de queso al centro, doblar y sellar bordes. Pintar con huevo batido.\n\n
+        Hornear: Cocinar a 180 °C por 25 minutos hasta doradas.\n\n
+        Servir caliente.
+    </string>
+
+    <!-- Empanada de Marisco -->
+    <string name="titulo_empanada_marisco">Empanada de Marisco</string>
+    <string name="ingredientes_empanada_marisco">
+        Ingredientes:\n
+        - 2 tarros de mariscos surtidos en conserva\n
+        - 1 cebolla cortada en cubitos\n
+        - 1 cdta de Ají de Color Gourmet\n
+        - 4 masas de empanadas\n
+        - 1 cdta de Ajo en Polvo Gourmet\n
+        - 1 huevo batido\n
+        - 600 g de harina\n
+        - 1 cdta de Sal de Mar Gourmet\n
+        - 120 g de manteca vegetal (derretida y tibia)\n
+        - 40 ml de vino blanco\n
+        - Agua tibia
+    </string>
+    <string name="preparacion_empanada_marisco">
+        Preparación:\n
+        Preparar la masa: Mezclar harina, sal y manteca hasta formar migas. Agregar vino y agua tibia poco a poco hasta tener una masa blanda pero no pegajosa. Amasar 5 minutos hasta que esté lisa y elástica. Reposar tapada. Estirar a 0,5 cm y cortar círculos de 15 cm.\n\n
+        Preparar el relleno: Sofreír cebolla con ají de color y ajo en polvo. Agregar mariscos y cocinar 1 minuto más. Retirar del fuego.\n\n
+        Armar las empanadas: Poner relleno al centro, doblar la masa y sellar los bordes. Pintar con huevo batido.\n\n
+        Hornear: Cocinar a 180 °C por 25 minutos hasta doradas.\n\n
+        Servir caliente.
+    </string>
+
+    <!-- Empanada de Pino -->
+    <string name="titulo_empanada_pino">Empanada de Pino</string>
+    <string name="ingredientes_empanada_pino">
+        Ingredientes:\n\n
+        Masa:\n
+        - 600 g de harina\n
+        - 1 cucharadita de sal\n
+        - 120 g de manteca vegetal (derretida y tibia)\n
+        - 40 ml de vino blanco\n
+        - Agua tibia\n\n
+        Relleno:\n
+        - 1 cucharada de aceite vegetal\n
+        - 2 cebollas picadas en cubos finos\n
+        - 500 g de carne en cubos pequeños\n
+        - 1/2 cdta de Ajo en Polvo Gourmet\n
+        - 1 cdta de Ají de Color Gourmet\n
+        - 1 cdta de Orégano Entero Gourmet\n
+        - 1 cdta de Comino Molido Gourmet\n
+        - Sal\n
+        - Pimienta Negra Molida Gourmet\n
+        - 24 pasas rubias (opcional)\n
+        - 12 aceitunas negras\n
+        - 3 huevos duros cortados en cuartos\n
+        - 2 huevos batidos para pintar
+    </string>
+    <string name="preparacion_empanada_pino">
+        Preparación:\n
+        Preparar la masa: Mezclar harina y sal con manteca hasta formar migas. Agregar vino y agua tibia poco a poco hasta obtener una masa blanda pero no pegajosa. Amasar 5 minutos hasta que esté lisa y elástica. Reposar tapada.\n\n
+        Preparar el pino: Calentar aceite, agregar cebolla y cocinar hasta transparente. Añadir carne, ajo en polvo, ají de color, orégano y comino; cocinar hasta que la carne esté lista. Sazonar con sal y pimienta. Dejar enfriar.\n\n
+        Armar: Estirar masa a 0,5 cm, cortar círculos de 15 cm. Rellenar con pino, pasas, aceituna y huevo duro. Cerrar y sellar. Pintar con huevo batido.\n\n
+        Hornear: 180 °C por 40 minutos.
+    </string>
+
+    <!-- Mango Sour -->
+    <string name="titulo_mango_sour">Mango Sour</string>
+    <string name="ingredientes_mango_sour">
+        Ingredientes:\n
+        - 1 taza de pulpa de mango\n
+        - 1 taza de pisco\n
+        - 1/2 taza de jugo de limón\n
+        - 1/2 taza de jarabe de goma\n
+        - Hielo
+    </string>
+    <string name="preparacion_mango_sour">
+        Preparación:\n
+        Poner todos los ingredientes en una licuadora y mezclar hasta que quede homogéneo.\n\n
+        Servir en copas frías y disfrutar.
+    </string>
+
+    <!-- Pollo Asado con Limón -->
+    <string name="titulo_pollo_limon">Pollo Asado con Limón</string>
+    <string name="ingredientes_pollo_limon">
+        Ingredientes:\n
+        - 1 pollo entero\n
+        - 2 limones\n
+        - 3 dientes de ajo\n
+        - 2 cdas de aceite de oliva\n
+        - 1 cdta de Orégano Entero Gourmet\n
+        - 1 cdta de Pimienta Negra Molida Gourmet\n
+        - 1 cdta de Sal de Mar Gourmet
+    </string>
+    <string name="preparacion_pollo_limon">
+        Preparación:\n
+        Mezclar jugo de limón, ajo, aceite y condimentos. Untar todo el pollo y dejar reposar 30 minutos.\n\n
+        Hornear a 200 °C durante 1 hora o hasta dorar.\n\n
+        Servir caliente.
+    </string>
+
+    <!-- Terremoto -->
+    <string name="titulo_terremoto">Terremoto</string>
+    <string name="ingredientes_terremoto">
+        Ingredientes:\n
+        - 700 ml de vino pipeño o blanco\n
+        - 100 ml de granadina\n
+        - 200 ml de helado de piña, más para servir\n
+        - Opcional: chorrito de pisco
+    </string>
+    <string name="preparacion_terremoto">
+        Preparación:\n
+        Poner todos los ingredientes en una jarra y revolver hasta integrar.\n\n
+        Agregar helado de piña en cada vaso, servir y disfrutar.
+    </string>
+
+    <!-- Vino con Frutas -->
+    <string name="titulo_vino_frutas">Vino con Frutas</string>
+    <string name="ingredientes_vino_frutas">
+        Ingredientes:\n\n
+        Jarabe:\n
+        - 2 tazas de azúcar\n
+        - 1 taza de agua\n\n
+        Vino con Frutillas o Borgoña:\n
+        - 200 g de frutillas picadas\n
+        - 3/4 taza de jarabe\n
+        - 1 medida de pisco\n
+        - Hielo a gusto\n
+        - 1 botella de vino tinto\n\n
+        Ponche o Vino con Chirimoya:\n
+        - 1 chirimoya\n
+        - 3/4 taza de jarabe\n
+        - 1 medida de pisco\n
+        - Hielo a gusto\n
+        - 1 vino blanco
+    </string>
+    <string name="preparacion_vino_frutas">
+        Preparación:\n
+        Jarabe: Poner agua y azúcar en un sartén y revolver hasta disolver. Reservar.\n\n
+        Vino con Frutillas: Macerar frutillas con jarabe 30 min. Agregar hielo, vino y pisco.\n\n
+        Ponche de Chirimoya: Macerar chirimoya con jarabe 30 min. Agregar hielo, vino y pisco.
+    </string>
 </resources>

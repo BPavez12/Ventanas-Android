@@ -7,9 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_chile"
-    tools:context=".actividad_2">
+    tools:context=".actividad4">
 
-    <!-- Botón para regresar al menú -->
+    <!-- Botón de retroceso -->
     <ImageButton
         android:id="@+id/btnRetrocederAnterior"
         android:layout_width="48dp"
@@ -22,15 +22,15 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"/>
 
-
-    <!-- Empanadas -->
+    <!-- Terremoto -->
     <TextView
-        android:id="@+id/tvEmpanadas"
+        android:id="@+id/tvTerremoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Empanadas"
+        android:text="Terremoto"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/btnRetrocederAnterior"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,67 +38,69 @@
         android:layout_marginTop="24dp" />
 
     <ImageButton
-        android:id="@+id/btnEmpanadas"
-        android:layout_width="119dp"
-        android:layout_height="89dp"
-        android:src="@drawable/btn_empanada"
+        android:id="@+id/btnTerremoto"
+        android:layout_width="143dp"
+        android:layout_height="120dp"
         android:scaleType="fitCenter"
+        android:src="@drawable/btn_terremoto"
         android:background="@null"
-        app:layout_constraintTop_toBottomOf="@+id/tvEmpanadas"
+        app:layout_constraintTop_toBottomOf="@+id/tvTerremoto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="12dp" />
 
-    <!-- Parrilla -->
+    <!-- Vino con Frutas -->
     <TextView
-        android:id="@+id/tvParrilla"
+        android:id="@+id/tvVinoFrutas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Parrilla"
+        android:text="Vino con Frutas"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/btnEmpanadas"
+        app:layout_constraintTop_toBottomOf="@+id/btnTerremoto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp" />
 
     <ImageButton
-        android:id="@+id/btnParrilla"
-        android:layout_width="119dp"
-        android:layout_height="89dp"
-        android:src="@drawable/btn_asado"
+        android:id="@+id/btnVinoFrutas"
+        android:layout_width="132dp"
+        android:layout_height="112dp"
         android:scaleType="fitCenter"
+        android:src="@drawable/btn_vinos"
         android:background="@null"
-        app:layout_constraintTop_toBottomOf="@+id/tvParrilla"
+        app:layout_constraintTop_toBottomOf="@+id/tvVinoFrutas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="12dp" />
 
-    <!-- Tragos -->
+    <!-- Mango Sour -->
     <TextView
-        android:id="@+id/tvTragos"
+        android:id="@+id/tvMangoSour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tragos"
+        android:text="Mango Sour"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/btnParrilla"
+        app:layout_constraintTop_toBottomOf="@+id/btnVinoFrutas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp" />
 
     <ImageButton
-        android:id="@+id/btnTragos"
-        android:layout_width="119dp"
-        android:layout_height="89dp"
-        android:src="@drawable/btn_tragos"
+        android:id="@+id/btnMangoSour"
+        android:layout_width="129dp"
+        android:layout_height="125dp"
         android:scaleType="fitCenter"
+        android:src="@drawable/btn_mango"
         android:background="@null"
-        app:layout_constraintTop_toBottomOf="@+id/tvTragos"
+        app:layout_constraintTop_toBottomOf="@+id/tvMangoSour"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="12dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
