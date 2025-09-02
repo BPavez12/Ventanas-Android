@@ -11,43 +11,53 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class Empanadas extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_empanadas);
 
-        ImageButton btnVerRecetasEmpanadas = findViewById(R.id.recetasEmpanadas);
+        ImageButton btnRetroceso = findViewById(R.id.btnRetrocederAnterior);
 
-        ImageButton btnVerRecetasTragos = findViewById(R.id.recetasTragos);
+        ImageButton btnEmpanadaQueso = findViewById(R.id.btnEmpanadaQueso);
 
-        ImageButton btnVerRecetasParrillas = findViewById(R.id.recetasParrillas);
+        ImageButton btnEmpanadaPino = findViewById(R.id.btnEmpanadaPino);
 
-        btnVerRecetasEmpanadas.setOnClickListener(new View.OnClickListener() {
+        ImageButton btnEmpanadaMarisco = findViewById(R.id.btnEmpanadaMarisco);
+
+        btnEmpanadaQueso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Empanadas.class);
+                Intent intent = new Intent(Empanadas.this, EmpanadaDeQueso.class);
                 startActivity(intent);
             }
         });
 
-        btnVerRecetasTragos.setOnClickListener(new View.OnClickListener() {
+        btnEmpanadaPino.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Tragos.class);
+                Intent intent = new Intent(Empanadas.this, EmpanadasDePino.class);
                 startActivity(intent);
             }
         });
 
-        btnVerRecetasParrillas.setOnClickListener(new View.OnClickListener() {
+        btnEmpanadaMarisco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Parrillas.class);
+                Intent intent = new Intent(Empanadas.this, EmpanadaMarisco.class);
                 startActivity(intent);
             }
         });
+
+        btnRetroceso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

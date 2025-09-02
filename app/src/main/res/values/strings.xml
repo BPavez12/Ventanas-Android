@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- General -->
-    <string name="app_name">eccomerce</string>
+    <string name="app_name">S18!</string>
     <string name="volver_atras">Atrás</string>
 
     <!-- Anticucho de Pollo y Verduras -->
@@ -207,4 +207,5 @@
         Ponche de Chirimoya: Macerar chirimoya con jarabe 30 min. Agregar hielo, vino y pisco.
     </string>
     <string name="recetas_de_cocina_para_un_buen_n_18_de_septiembre_2025">Recetas de cocina para un buen \n 18 de Septiembre 2025</string>
+    <string name="tragos">Tragos</string>
 </resources>

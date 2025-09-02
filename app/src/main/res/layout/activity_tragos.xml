@@ -7,27 +7,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_chile"
-    tools:context=".actividad5">
+    tools:context=".Tragos">
 
     <!-- Botón de retroceso -->
+
+    <!-- Terremoto -->
     <ImageButton
         android:id="@+id/btnRetrocederAnterior"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/baseline_arrow_back_24"
-        android:backgroundTint="#D52B1E"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@android:color/transparent"
         android:contentDescription="@string/volver_atras"
-        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_retroceso"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Anticucho de Pollo y Verduras -->
     <TextView
-        android:id="@+id/tvAnticuchoPolloVerduras"
+        android:id="@+id/tvTerremoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Anticucho de Pollo\ny Verduras"
+        android:text="Terremoto"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -38,67 +40,67 @@
         android:layout_marginTop="24dp" />
 
     <ImageButton
-        android:id="@+id/btnAnticuchoPolloVerduras"
-        android:layout_width="171dp"
+        android:id="@+id/btnTerremoto"
+        android:layout_width="143dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_terremoto"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/tvTerremoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Vino con Frutas -->
+    <TextView
+        android:id="@+id/tvVinoFrutas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vino con Frutas"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btnTerremoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <ImageButton
+        android:id="@+id/btnVinoFrutas"
+        android:layout_width="132dp"
+        android:layout_height="112dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_vinos"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/tvVinoFrutas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Mango Sour -->
+    <TextView
+        android:id="@+id/tvMangoSour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mango Sour"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btnVinoFrutas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <ImageButton
+        android:id="@+id/btnMangoSour"
+        android:layout_width="129dp"
         android:layout_height="125dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/btn_anticucho"
+        android:src="@drawable/btn_mango"
         android:background="@null"
-        app:layout_constraintTop_toBottomOf="@+id/tvAnticuchoPolloVerduras"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp" />
-
-    <!-- Costillar de Cerdo a la parrilla -->
-    <TextView
-        android:id="@+id/tvCostillarCerdo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Costillar de Cerdo\na la parrilla"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/btnAnticuchoPolloVerduras"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
-
-    <ImageButton
-        android:id="@+id/btnCostillarCerdo"
-        android:layout_width="159dp"
-        android:layout_height="109dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/btn_costillar"
-        android:background="@null"
-        app:layout_constraintTop_toBottomOf="@+id/tvCostillarCerdo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp" />
-
-    <!-- Pollo Asado al Limón -->
-    <TextView
-        android:id="@+id/tvPolloAsadoLimon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pollo Asado al Limón"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/btnCostillarCerdo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
-
-    <ImageButton
-        android:id="@+id/btnPolloAsadoLimon"
-        android:layout_width="139dp"
-        android:layout_height="152dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/btn_pollo"
-        android:background="@null"
-        app:layout_constraintTop_toBottomOf="@+id/tvPolloAsadoLimon"
+        app:layout_constraintTop_toBottomOf="@+id/tvMangoSour"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="12dp" />
