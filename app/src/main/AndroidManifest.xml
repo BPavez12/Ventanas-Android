@@ -48,9 +48,6 @@
             android:name=".actividad_3"
             android:exported="false" />
         <activity
-            android:name=".actividad_2"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
