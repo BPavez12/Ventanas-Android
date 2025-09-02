@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Eccomerce">
         <activity
+            android:name=".PinoEmpanada"
+            android:exported="false" />
+        <activity
             android:name=".EmpanadasDePino"
             android:exported="false" />
         <activity

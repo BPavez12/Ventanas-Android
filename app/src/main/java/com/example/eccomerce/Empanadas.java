@@ -38,7 +38,7 @@ public class Empanadas extends AppCompatActivity {
         btnEmpanadaPino.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Empanadas.this, EmpanadasDePino.class);
+                Intent intent = new Intent(Empanadas.this, PinoEmpanada.class);
                 startActivity(intent);
             }
         });
