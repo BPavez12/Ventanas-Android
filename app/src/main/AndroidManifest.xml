@@ -12,10 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Eccomerce">
         <activity
-            android:name=".PinoEmpanada"
+            android:name=".MariscoEmpanada"
             android:exported="false" />
         <activity
-            android:name=".EmpanadasDePino"
+            android:name=".QuesoEmpanada"
+            android:exported="false" />
+        <activity
+            android:name=".PinoEmpanada"
             android:exported="false" />
         <activity
             android:name=".Empanadas"
@@ -40,12 +43,6 @@
             android:exported="false" />
         <activity
             android:name=".Tragos"
-            android:exported="false" />
-        <activity
-            android:name=".EmpanadaMarisco"
-            android:exported="false" />
-        <activity
-            android:name=".EmpanadaDeQueso"
             android:exported="false" />
         <activity
             android:name=".Parrillas"

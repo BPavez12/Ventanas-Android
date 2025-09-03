@@ -30,7 +30,7 @@ public class Empanadas extends AppCompatActivity {
         btnEmpanadaQueso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Empanadas.this, EmpanadaDeQueso.class);
+                Intent intent = new Intent(Empanadas.this, QuesoEmpanada.class);
                 startActivity(intent);
             }
         });
@@ -46,7 +46,7 @@ public class Empanadas extends AppCompatActivity {
         btnEmpanadaMarisco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Empanadas.this, EmpanadaMarisco.class);
+                Intent intent = new Intent(Empanadas.this, MariscoEmpanada.class);
                 startActivity(intent);
             }
         });
