@@ -16,15 +16,17 @@ public class PinoEmpanada extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+
+        // Vinculamos este Activity con su layout
         setContentView(R.layout.activity_pino_empanada);
 
+        // Boton de Atras
         ImageButton btnRetroceso = findViewById(R.id.btnRetrocederOpciones);
-
         btnRetroceso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
-            }
+            } // Cierra este Activity
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

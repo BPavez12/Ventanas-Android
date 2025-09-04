@@ -16,14 +16,16 @@ public class MariscoEmpanada extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+
+        // Vinculamos este Activity con su layout
         setContentView(R.layout.activity_marisco_empanada);
 
+        // Boton de Atras
         ImageButton btnRetroceso = findViewById(R.id.btnMenuRetroceder);
-
         btnRetroceso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                finish(); // Cierra este Activity
             }
         });
 
