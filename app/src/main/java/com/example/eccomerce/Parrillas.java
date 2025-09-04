@@ -21,10 +21,10 @@ public class Parrillas extends AppCompatActivity {
         // Vinculamos este Activity con su layout XML
         setContentView(R.layout.activity_parrillas);
 
-        // Botón de retroceso
+        // Botón de Atras
         ImageButton btnRetroceso = findViewById(R.id.btnRetrocederAnterior);
 
-        // Botones de platos en la categoría Parrilla
+        // Botones de platos en el apartado Parrilla
         ImageButton btnAnticucho = findViewById(R.id.btnAnticuchoPolloVerduras);
         ImageButton btnCostillar = findViewById(R.id.btnCostillarCerdo);
         ImageButton btnPollo = findViewById(R.id.btnPolloAsadoLimon);
@@ -60,7 +60,7 @@ public class Parrillas extends AppCompatActivity {
         btnRetroceso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Cierra este Activity y regresa al anterior
+                finish(); // Cierra este Activity
             }
         });
 

@@ -22,8 +22,6 @@ public class AnticuchoDePolloYVerduras extends AppCompatActivity {
 
         // Botón de atras
         ImageButton btnAtras = findViewById(R.id.btnAtrasAnticucho);
-
-        // Acción del botón: cerrar este Activity y volver atrás
         btnAtras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

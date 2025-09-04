@@ -60,7 +60,7 @@ public class Empanadas extends AppCompatActivity {
         btnRetroceso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Cierra este Activity y regresa al anterior
+                finish(); // Cierra este Activity
             }
         });
 

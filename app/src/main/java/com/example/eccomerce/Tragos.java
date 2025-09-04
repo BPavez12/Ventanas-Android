@@ -21,10 +21,10 @@ public class Tragos extends AppCompatActivity {
         // Vinculamos este Activity con su layout XML
         setContentView(R.layout.activity_tragos);
 
-        // --- Botón de retroceso ---
+        // Botón de retroceso
         ImageButton btnRetroceso = findViewById(R.id.btnRetrocederAnterior);
 
-        // --- Botones de cada trago ---
+        // Botones de cada trago
         ImageButton btnTerremoto = findViewById(R.id.btnTerremoto);
         ImageButton btnMangoSour = findViewById(R.id.btnMangoSour);
         ImageButton btnVinoFrutas = findViewById(R.id.btnVinoFrutas);
@@ -60,11 +60,10 @@ public class Tragos extends AppCompatActivity {
         btnRetroceso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Cierra este Activity y regresa al anterior
+                finish(); // Cierra este Activity
             }
         });
 
-        // Ajuste automático para respetar las barras del sistema (barra de estado, notch, etc.)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
