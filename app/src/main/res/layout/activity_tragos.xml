@@ -10,8 +10,6 @@
     tools:context=".Tragos">
 
     <!-- Botón de retroceso -->
-
-    <!-- Terremoto -->
     <ImageButton
         android:id="@+id/btnRetrocederAnterior"
         android:layout_width="70dp"
@@ -25,38 +23,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Terremoto -->
+
     <TextView
         android:id="@+id/tvTerremoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Terremoto"
+        android:layout_marginTop="8dp"
+        android:text="@string/titulo_terremoto"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/btnRetrocederAnterior"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
-
-    <ImageButton
-        android:id="@+id/btnTerremoto"
-        android:layout_width="143dp"
-        android:layout_height="120dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/btn_terremoto"
-        android:background="@null"
-        app:layout_constraintTop_toBottomOf="@+id/tvTerremoto"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRetrocederAnterior" />
 
     <!-- Vino con Frutas -->
+    <ImageButton
+        android:id="@+id/btnTerremoto"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        android:background="#0039A6"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_terremoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTerremoto" />
+
     <TextView
         android:id="@+id/tvVinoFrutas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vino con Frutas"
+        android:text="@string/titulo_vino_frutas"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -68,22 +70,23 @@
 
     <ImageButton
         android:id="@+id/btnVinoFrutas"
-        android:layout_width="132dp"
-        android:layout_height="112dp"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="#0039A6"
+        android:padding="10dp"
         android:scaleType="fitCenter"
         android:src="@drawable/btn_vinos"
-        android:background="@null"
         app:layout_constraintTop_toBottomOf="@+id/tvVinoFrutas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="8dp" />
 
     <!-- Mango Sour -->
     <TextView
         android:id="@+id/tvMangoSour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mango Sour"
+        android:text="@string/titulo_mango_sour"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -95,14 +98,15 @@
 
     <ImageButton
         android:id="@+id/btnMangoSour"
-        android:layout_width="129dp"
-        android:layout_height="125dp"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="#0039A6"
+        android:padding="10dp"
         android:scaleType="fitCenter"
         android:src="@drawable/btn_mango"
-        android:background="@null"
         app:layout_constraintTop_toBottomOf="@+id/tvMangoSour"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="8dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

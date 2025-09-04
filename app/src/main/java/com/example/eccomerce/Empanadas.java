@@ -17,16 +17,19 @@ public class Empanadas extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+
+        // Vinculamos este Activity con su layout XML
         setContentView(R.layout.activity_empanadas);
 
+        // Botón de retroceso
         ImageButton btnRetroceso = findViewById(R.id.btnRetrocederAnterior);
 
+        // Botones de cada receta de empanada
         ImageButton btnEmpanadaQueso = findViewById(R.id.btnEmpanadaQueso);
-
         ImageButton btnEmpanadaPino = findViewById(R.id.btnEmpanadaPino);
-
         ImageButton btnEmpanadaMarisco = findViewById(R.id.btnEmpanadaMarisco);
 
+        // Abrir receta de Empanada de Queso
         btnEmpanadaQueso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,6 +38,7 @@ public class Empanadas extends AppCompatActivity {
             }
         });
 
+        // Abrir receta de Empanada de Pino
         btnEmpanadaPino.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,6 +47,7 @@ public class Empanadas extends AppCompatActivity {
             }
         });
 
+        // Abrir receta de Empanada de Marisco
         btnEmpanadaMarisco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,10 +56,11 @@ public class Empanadas extends AppCompatActivity {
             }
         });
 
+        // Botón para volver atrás al menú anterior
         btnRetroceso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                finish(); // Cierra este Activity y regresa al anterior
             }
         });
 

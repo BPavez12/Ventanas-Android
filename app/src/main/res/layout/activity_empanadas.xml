@@ -9,10 +9,8 @@
     android:background="@drawable/fondo_chile"
     tools:context=".Empanadas">
 
+
     <!-- Botón de Atrás -->
-
-    <!-- Empanada de Queso -->
-
     <ImageButton
         android:id="@+id/btnRetrocederAnterior"
         android:layout_width="70dp"
@@ -26,10 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Empanada de Pino -->
-
     <!-- Empanada de Marisco -->
-
     <ImageButton
         android:id="@+id/btnEmpanadaMarisco"
         android:layout_width="300dp"
@@ -44,6 +39,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvEmpanadaMarisco" />
 
+    <!-- Empanada de Pino -->
     <ImageButton
         android:id="@+id/btnEmpanadaPino"
         android:layout_width="300dp"
@@ -58,6 +54,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvEmpanadaPino" />
 
+    <!-- Empanada de Queso -->
     <ImageButton
         android:id="@+id/btnEmpanadaQueso"
         android:layout_width="300dp"

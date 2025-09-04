@@ -7,12 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_chile"
-    tools:context=".Empanadas">
+    tools:context=".Parrillas">
 
     <!-- Botón de retroceso -->
-
-    <!-- Anticucho de Pollo y Verduras -->
-
     <ImageButton
         android:id="@+id/btnRetrocederAnterior"
         android:layout_width="70dp"
@@ -26,39 +23,69 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Costillar de Cerdo a la parrilla -->
-
-    <!-- Pollo Asado al Limón -->
-
-    <ImageButton
-        android:id="@+id/btnPolloAsadoLimon"
-        android:layout_width="139dp"
-        android:layout_height="152dp"
-        android:layout_marginTop="8dp"
-        android:background="@null"
-        android:scaleType="fitCenter"
-        android:src="@drawable/btn_pollo"
+    <!-- Anticucho de Pollo y Verduras -->
+    <TextView
+        android:id="@+id/tvAnticuchoPolloVerduras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Anticucho de Pollo y Verduras"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPolloAsadoLimon" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRetrocederAnterior" />
+
+    <ImageButton
+        android:id="@+id/btnAnticuchoPolloVerduras"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        android:background="#0039A6"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_anticucho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnticuchoPolloVerduras" />
+
+    <!-- Costillar de Cerdo a la parrilla -->
+    <TextView
+        android:id="@+id/tvCostillarCerdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Costillar de Cerdo a la Parrilla"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnticuchoPolloVerduras" />
 
     <ImageButton
         android:id="@+id/btnCostillarCerdo"
-        android:layout_width="159dp"
-        android:layout_height="109dp"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
         android:layout_marginTop="4dp"
-        android:background="@null"
+        android:background="#0039A6"
+        android:padding="10dp"
         android:scaleType="fitCenter"
         android:src="@drawable/btn_costillar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCostillarCerdo" />
 
+    <!-- Pollo Asado al Limón -->
     <TextView
         android:id="@+id/tvPolloAsadoLimon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="12dp"
         android:text="Pollo Asado al Limón"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -68,45 +95,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCostillarCerdo" />
 
-    <TextView
-        android:id="@+id/tvAnticuchoPolloVerduras"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Anticucho de Pollo\ny Verduras"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRetrocederAnterior" />
-
-    <TextView
-        android:id="@+id/tvCostillarCerdo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Costillar de Cerdo\na la parrilla"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAnticuchoPolloVerduras" />
-
     <ImageButton
-        android:id="@+id/btnAnticuchoPolloVerduras"
-        android:layout_width="171dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="8dp"
-        android:background="@null"
+        android:id="@+id/btnPolloAsadoLimon"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        android:background="#0039A6"
+        android:padding="10dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/btn_anticucho"
+        android:src="@drawable/btn_pollo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAnticuchoPolloVerduras" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPolloAsadoLimon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
