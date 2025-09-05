@@ -33,8 +33,8 @@ public class Tragos extends AppCompatActivity {
         btnTerremoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Tragos.this, Terremoto.class);
-                startActivity(intent);
+                Intent intentTerremoto = new Intent(Tragos.this, Terremoto.class);
+                startActivity(intentTerremoto);
             }
         });
 
@@ -42,18 +42,18 @@ public class Tragos extends AppCompatActivity {
         btnMangoSour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Tragos.this, MangoSour.class);
-                startActivity(intent);
-            }
+                Intent intentMango = new Intent(Tragos.this, MangoSour.class);
+                startActivity(intentMango);
+            };
         });
 
         // Abrir receta de Vino con Frutas
         btnVinoFrutas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Tragos.this, VinoConFrutas.class);
-                startActivity(intent);
-            }
+                Intent intentFrutas = new Intent(Tragos.this, VinoConFrutas.class);
+                startActivity(intentFrutas);
+            };
         });
 
         // Botón para volver atrás al menú anterior

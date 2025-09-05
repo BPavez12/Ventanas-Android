@@ -68,20 +68,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp" />
 
+    <!-- Mango Sour -->
     <ImageButton
         android:id="@+id/btnVinoFrutas"
         android:layout_width="300dp"
         android:layout_height="150dp"
+        android:layout_marginTop="8dp"
         android:background="#0039A6"
         android:padding="10dp"
         android:scaleType="fitCenter"
         android:src="@drawable/btn_vinos"
-        app:layout_constraintTop_toBottomOf="@+id/tvVinoFrutas"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVinoFrutas" />
 
-    <!-- Mango Sour -->
     <TextView
         android:id="@+id/tvMangoSour"
         android:layout_width="wrap_content"
