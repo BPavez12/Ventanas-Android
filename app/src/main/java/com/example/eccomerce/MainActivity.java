@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         ImageButton btnVerRecetasParrillas = findViewById(R.id.recetasParrillas);
 
+        ImageButton btnMisRecetas = findViewById(R.id.recetaCrear);
+
         btnVerRecetasEmpanadas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +47,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Parrillas.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMisRecetas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RecetaCrear.class);
                 startActivity(intent);
             }
         });

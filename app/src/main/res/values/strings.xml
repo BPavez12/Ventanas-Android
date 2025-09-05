@@ -208,4 +208,8 @@
     </string>
     <string name="recetas_de_cocina_para_un_buen_n_18_de_septiembre_2025">Recetas de cocina para un buen \n 18 de Septiembre 2025</string>
     <string name="tragos">Tragos</string>
+    <string name="nombre_de_la_receta">Nombre de la receta</string>
+    <string name="preparaci_n_de_la_receta">Preparación de la receta</string>
+    <string name="abrir_c_mara">Abrir Cámara</string>
+    <string name="ingredientes_de_la_receta">Ingredientes de la receta</string>
 </resources>

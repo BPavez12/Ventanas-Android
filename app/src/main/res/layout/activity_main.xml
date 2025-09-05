@@ -156,7 +156,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crear Receta"
+        android:text="Mis Recetas"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
