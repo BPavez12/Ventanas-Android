@@ -16,7 +16,8 @@
         android:layout_height="70dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="28dp"
-        android:backgroundTint="@android:color/transparent"
+        android:background="@null"
+        android:foreground="@null"
         android:contentDescription="@string/volver_atras"
         android:scaleType="centerCrop"
         android:src="@drawable/btn_retroceso"
@@ -24,7 +25,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Terremoto -->
-
     <TextView
         android:id="@+id/tvTerremoto"
         android:layout_width="wrap_content"
@@ -39,13 +39,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRetrocederAnterior" />
 
-    <!-- Vino con Frutas -->
     <ImageButton
         android:id="@+id/btnTerremoto"
         android:layout_width="300dp"
         android:layout_height="150dp"
         android:layout_marginTop="4dp"
-        android:background="#0039A6"
+        android:background="@null"
+        android:foreground="@null"
         android:padding="10dp"
         android:scaleType="fitCenter"
         android:src="@drawable/btn_terremoto"
@@ -54,6 +54,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTerremoto" />
 
+    <!-- Vino con Frutas -->
     <TextView
         android:id="@+id/tvVinoFrutas"
         android:layout_width="wrap_content"
@@ -68,13 +69,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp" />
 
-    <!-- Mango Sour -->
     <ImageButton
         android:id="@+id/btnVinoFrutas"
         android:layout_width="300dp"
         android:layout_height="150dp"
         android:layout_marginTop="8dp"
-        android:background="#0039A6"
+        android:background="@null"
+        android:foreground="@null"
         android:padding="10dp"
         android:scaleType="fitCenter"
         android:src="@drawable/btn_vinos"
@@ -83,6 +84,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvVinoFrutas" />
 
+    <!-- Mango Sour -->
     <TextView
         android:id="@+id/tvMangoSour"
         android:layout_width="wrap_content"
@@ -101,7 +103,8 @@
         android:id="@+id/btnMangoSour"
         android:layout_width="300dp"
         android:layout_height="150dp"
-        android:background="#0039A6"
+        android:background="@null"
+        android:foreground="@null"
         android:padding="10dp"
         android:scaleType="fitCenter"
         android:src="@drawable/btn_mango"
