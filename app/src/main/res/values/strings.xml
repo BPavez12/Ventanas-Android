@@ -212,4 +212,7 @@
     <string name="preparaci_n_de_la_receta">Preparación de la receta</string>
     <string name="abrir_c_mara">Abrir Cámara</string>
     <string name="ingredientes_de_la_receta">Ingredientes de la receta</string>
+    <string name="empanada_de_queso">Empanada de Queso</string>
+    <string name="empanada_de_pino">Empanada de Pino</string>
+    <string name="empanada_de_marisco">Empanada de Marisco</string>
 </resources>

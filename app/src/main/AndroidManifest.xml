@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <!-- Permisos -->
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
-
-    <!-- Declarar que la cámara es opcional -->
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /> <!-- Declarar que la cámara es opcional -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Eccomerce">
-
+        <activity
+            android:name=".EmpanadasTodas"
+            android:exported="false" />
         <!-- FileProvider -->
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -25,32 +26,56 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"/>
-        </provider>
-s
-        <!-- Actividades de tu app -->
-        <activity android:name=".RecetaCrear" android:exported="false" />
-        <activity android:name=".MariscoEmpanada" android:exported="false" />
-        <activity android:name=".QuesoEmpanada" android:exported="false" />
-        <activity android:name=".PinoEmpanada" android:exported="false" />
-        <activity android:name=".Empanadas" android:exported="false" />
-        <activity android:name=".CostillarDeCerdoParrilla" android:exported="false" />
-        <activity android:name=".AnticuchoDePolloYVerduras" android:exported="false" />
-        <activity android:name=".PolloAsadoAlLimon" android:exported="false" />
-        <activity android:name=".MangoSour" android:exported="false" />
-        <activity android:name=".VinoConFrutas" android:exported="false" />
-        <activity android:name=".Terremoto" android:exported="false" />
-        <activity android:name=".Tragos" android:exported="false" />
-        <activity android:name=".Parrillas" android:exported="false" />
-
-        <!-- Actividad principal -->
-        <activity android:name=".MainActivity" android:exported="true">
+                android:resource="@xml/file_paths" />
+        </provider> <!-- Actividades de tu app -->
+        <activity
+            android:name=".RecetaCrear"
+            android:exported="false" />
+        <activity
+            android:name=".MariscoEmpanada"
+            android:exported="false" />
+        <activity
+            android:name=".QuesoEmpanada"
+            android:exported="false" />
+        <activity
+            android:name=".PinoEmpanada"
+            android:exported="false" />
+        <activity
+            android:name=".Empanadas"
+            android:exported="false" />
+        <activity
+            android:name=".CostillarDeCerdoParrilla"
+            android:exported="false" />
+        <activity
+            android:name=".AnticuchoDePolloYVerduras"
+            android:exported="false" />
+        <activity
+            android:name=".PolloAsadoAlLimon"
+            android:exported="false" />
+        <activity
+            android:name=".MangoSour"
+            android:exported="false" />
+        <activity
+            android:name=".VinoConFrutas"
+            android:exported="false" />
+        <activity
+            android:name=".Terremoto"
+            android:exported="false" />
+        <activity
+            android:name=".Tragos"
+            android:exported="false" />
+        <activity
+            android:name=".Parrillas"
+            android:exported="false" /> <!-- Actividad principal -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
