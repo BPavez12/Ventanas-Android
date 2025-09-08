@@ -9,16 +9,14 @@
     tools:context=".MainActivity"
     android:padding="24dp">
 
-    <!-- Texto de Bienvenida e indicaciones -->
-
-    <!-- Boton para vizualizar las recetas -->
-
+    <!-- Botón para visualizar recetas creadas -->
     <ImageButton
         android:id="@+id/recetaCrear"
         android:layout_width="170dp"
         android:layout_height="115dp"
         android:adjustViewBounds="true"
-        android:background="#0039A6"
+        android:background="@null"
+        android:foreground="@null"
         android:padding="30dp"
         android:scaleType="fitCenter"
         android:src="@drawable/addreceta"
@@ -44,12 +42,14 @@
         app:layout_constraintTop_toBottomOf="@+id/recetasTragos"
         app:layout_constraintVertical_bias="0.0" />
 
+    <!-- Botón Tragos -->
     <ImageButton
         android:id="@+id/recetasTragos"
         android:layout_width="170dp"
         android:layout_height="115dp"
         android:adjustViewBounds="true"
-        android:background="#0039A6"
+        android:background="@null"
+        android:foreground="@null"
         android:padding="6dp"
         android:scaleType="fitCenter"
         android:src="@drawable/variedadestragos"
@@ -60,6 +60,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.758" />
 
+    <!-- Título principal -->
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
@@ -74,12 +75,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.097" />
 
+    <!-- Subtítulo -->
     <TextView
         android:id="@+id/informacion"
         android:layout_width="413dp"
         android:layout_height="86dp"
         android:layout_marginTop="20dp"
-        android:background="#0039A6"
         android:padding="5dp"
         android:text="@string/recetas_de_cocina_para_un_buen_n_18_de_septiembre_2025"
         android:textAlignment="center"
@@ -90,12 +91,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
+    <!-- Botón Empanadas -->
     <ImageButton
         android:id="@+id/recetasEmpanadas"
         android:layout_width="170dp"
         android:layout_height="115dp"
         android:adjustViewBounds="true"
-        android:background="#0039A6"
+        android:background="@null"
+        android:foreground="@null"
         android:padding="6dp"
         android:scaleType="fitCenter"
         android:src="@drawable/variedadesempanadas"
@@ -106,12 +109,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.478" />
 
+    <!-- Botón Parrillas -->
     <ImageButton
         android:id="@+id/recetasParrillas"
         android:layout_width="170dp"
         android:layout_height="115dp"
         android:adjustViewBounds="true"
-        android:background="#0039A6"
+        android:background="@null"
+        android:foreground="@null"
         android:padding="6dp"
         android:scaleType="fitCenter"
         android:src="@drawable/variedadparrilla"
@@ -122,6 +127,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.478" />
 
+    <!-- Texto Empanadas -->
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -137,6 +143,7 @@
         app:layout_constraintTop_toBottomOf="@+id/recetasEmpanadas"
         app:layout_constraintVertical_bias="0.0" />
 
+    <!-- Texto Parrillas -->
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -152,6 +159,7 @@
         app:layout_constraintTop_toBottomOf="@+id/recetasParrillas"
         app:layout_constraintVertical_bias="0.0" />
 
+    <!-- Texto Mis Recetas -->
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
@@ -166,6 +174,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recetaCrear"
         app:layout_constraintVertical_bias="0.0" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
