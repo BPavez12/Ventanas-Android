@@ -1,10 +1,13 @@
 package com.example.eccomerce;
 
 import android.Manifest;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -41,6 +44,40 @@ public class RecetaCrear extends AppCompatActivity {
 
         imageView = findViewById(R.id.imageView);
         Button btnCamera = findViewById(R.id.btnCamera);
+
+
+        EditText nombreReceta = findViewById(R.id.nombreReceta);
+
+        EditText ingredientesReceta = findViewById(R.id.ingredientesReceta);
+
+        EditText preparacionReceta = findViewById(R.id.preparacionReceta);
+
+        Button btnCrearReceta = findViewById(R.id.btnCrearR);
+
+        btnCrearReceta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String nombre = nombreReceta.getText().toString();
+
+                String ingredientes = ingredientesReceta.getText().toString();
+
+                String preparacion = preparacionReceta.getText().toString();
+
+                Intent intent = new Intent(RecetaCrear.this, recetaMenu.class);
+
+                intent.putExtra("nombre", nombre);
+                intent.putExtra("ingredientes", ingredientes);
+                intent.putExtra("preparacion", preparacion);
+
+                if (photoURI != null) {
+                    intent.putExtra("imagenUri", photoURI.toString());
+                }
+
+                startActivity(intent);
+
+            }
+        });
 
         // Inicializar lanzador de la cámara
         takePictureLauncher = registerForActivityResult(
