@@ -111,7 +111,7 @@
 
     <!-- Botón Parrillas -->
     <ImageButton
-        android:id="@+id/recetasParrillas"
+        android:id="@+id/parrillasTodas"
         android:layout_width="170dp"
         android:layout_height="115dp"
         android:adjustViewBounds="true"
@@ -156,7 +156,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.792"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recetasParrillas"
+        app:layout_constraintTop_toBottomOf="@+id/parrillasTodas"
         app:layout_constraintVertical_bias="0.0" />
 
     <!-- Texto Mis Recetas -->

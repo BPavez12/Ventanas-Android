@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         ImageButton btnVerRecetasTragos = findViewById(R.id.recetasTragos);
 
-        ImageButton btnVerRecetasParrillas = findViewById(R.id.recetasParrillas);
+        ImageButton btnVerRecetasParrillas = findViewById(R.id.parrillasTodas);
 
         ImageButton btnMisRecetas = findViewById(R.id.recetaCrear);
 
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btnVerRecetasParrillas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Parrillas.class);
+                Intent intent = new Intent(MainActivity.this, ParrillasTodas.class);
                 startActivity(intent);
             }
         });
