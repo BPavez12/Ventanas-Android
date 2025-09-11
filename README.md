@@ -1,4 +1,4 @@
 Integrantes:
 - (BPavez12)Benjamin Pavez
-- (mister)Victor Ugalde
+- (Mswindow-coder)Victor Ugalde
 - (D4rK14)Cristhian Quiroz
