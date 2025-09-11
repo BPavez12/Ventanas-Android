@@ -3,7 +3,7 @@
     android:shape="rectangle">
 
     <!-- Color de fondo -->
-    <solid android:color="#AA0039A6" /> <!-- Azul semitransparente -->
+    <solid android:color="#0039A6" /> <!-- Azul semitransparente -->
 
     <!-- Bordes redondeados -->
     <corners android:radius="16dp" />

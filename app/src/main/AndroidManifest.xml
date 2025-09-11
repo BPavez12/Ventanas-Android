@@ -21,6 +21,10 @@
         <activity
             android:name=".EmpanadasTodas"
             android:exported="false" /> <!-- FileProvider -->
+        <activity
+            android:name=".ParrillasTodas"
+            android:exported="false" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.eccomerce.provider"
