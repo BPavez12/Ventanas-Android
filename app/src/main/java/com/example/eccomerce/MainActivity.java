@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         btnVerRecetasTragos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Tragos.class);
+                Intent intent = new Intent(MainActivity.this, TragosTodas.class);
                 startActivity(intent);
             }
         });
