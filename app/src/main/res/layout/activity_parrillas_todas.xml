@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/mainParrillas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_chile"
-    tools:context=".EmpanadasTodas">
+    tools:context=".Parrillas">
 
     <!-- Botón de atrás -->
     <ImageButton
@@ -22,59 +23,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <!-- Horizontal Scroll para cambiar recetas -->
     <HorizontalScrollView
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <!-- Empanada de Queso -->
+            <!-- Anticucho de Pollo y Verduras -->
             <LinearLayout
-                android:id="@+id/EQuesoV"
+                android:id="@+id/anticuchoV"
                 android:layout_width="410dp"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
 
                 <TextView
-                    android:id="@+id/textEQueso"
+                    android:id="@+id/textAnticucho"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="85dp"
-                    android:text="    Empanada de Queso"
+                    android:layout_marginTop="50dp"
+                    android:text="Anticucho de Pollo y Verduras"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
 
                 <ImageView
-                    android:id="@+id/imgEQueso"
+                    android:id="@+id/imgAnticucho"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="30dp"
                     android:adjustViewBounds="true"
-                    android:paddingLeft="60dp"
-                    android:paddingRight="50dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/empanada_de_queso" />
+                    app:srcCompat="@drawable/anticucho_de_pollo_y_verduras"/>
 
                 <ScrollView
-                    android:id="@+id/scrollQueso"
                     android:layout_width="340dp"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="34dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:padding="6dp">
 
                     <LinearLayout
@@ -83,64 +78,61 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/ingredientesEmpanadaQueso"
+                            android:id="@+id/ingredientesAnticucho"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/ingredientes_empanada_queso"
-                            android:textColor="#FFFF"
+                            android:text="@string/ingredientes_anticucho"
+                            android:textColor="#FFFFFF"
                             android:textSize="14sp"
                             android:textStyle="bold"/>
 
                         <TextView
-                            android:id="@+id/preparacionEmpanadaQueso"
+                            android:id="@+id/preparacionAnticucho"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/preparacion_empanada_queso"
-                            android:textColor="#FFFF"
+                            android:text="@string/preparacion_anticucho"
+                            android:textColor="#FFFFFF"
                             android:textSize="14sp"
                             android:textStyle="bold"
                             android:layout_marginTop="12dp"/>
                     </LinearLayout>
                 </ScrollView>
-
             </LinearLayout>
 
-            <!-- Empanada de Pino -->
+            <!-- Costillar de Cerdo a la Parrilla -->
             <LinearLayout
-                android:id="@+id/EPinoV"
+                android:id="@+id/costillarV"
                 android:layout_width="410dp"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
 
                 <TextView
-                    android:id="@+id/textEPino"
+                    android:id="@+id/textCostillar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="85dp"
-                    android:text="  Empanada de Pino"
+                    android:layout_marginTop="50dp"
+                    android:text="Costillar de Cerdo a la Parrilla"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
 
                 <ImageView
-                    android:id="@+id/imgEPino"
+                    android:id="@+id/imgCostillar"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="30dp"
                     android:adjustViewBounds="true"
-                    android:paddingLeft="60dp"
-                    android:paddingRight="50dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/empanada_pino" />
+                    app:srcCompat="@drawable/costillas_de_cerdo"/>
 
                 <ScrollView
-                    android:id="@+id/scrollView2"
                     android:layout_width="340dp"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="34dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:padding="6dp">
 
                     <LinearLayout
@@ -149,92 +141,88 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/ingredientesEmpanadaPino"
+                            android:id="@+id/ingredientesCostillar"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/ingredientes_empanada_pino"
-                            android:textColor="#FFFF"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/preparacionEmpanadaPino"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:text="@string/preparacion_empanada_pino"
-                            android:textColor="#FFFF"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-                </ScrollView>
-
-            </LinearLayout>
-
-            <!-- Empanada de Marisco -->
-            <LinearLayout
-                android:id="@+id/EMariscoV"
-                android:layout_width="410dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textEMarisco"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="85dp"
-                    android:text="    Empanada de Marisco"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:id="@+id/imgEMarisco"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:adjustViewBounds="true"
-                    android:paddingLeft="60dp"
-                    android:paddingRight="50dp"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/empanada_marisco" />
-
-                <ScrollView
-                    android:id="@+id/scrollMarisco"
-                    android:layout_width="340dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="34dp"
-                    android:layout_marginTop="40dp"
-                    android:padding="6dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/ingredientesEmpanadaMarisco"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/ingredientes_empanada_marisco"
-                            android:textColor="#FFFF"
+                            android:text="@string/ingredientes_costillar"
+                            android:textColor="#FFFFFF"
                             android:textSize="14sp"
                             android:textStyle="bold"/>
 
                         <TextView
-                            android:id="@+id/preparacionEmpanadaMarisco"
+                            android:id="@+id/preparacionCostillar"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/preparacion_empanada_marisco"
-                            android:textColor="#FFFF"
+                            android:text="@string/preparacion_costillar"
+                            android:textColor="#FFFFFF"
                             android:textSize="14sp"
                             android:textStyle="bold"
                             android:layout_marginTop="12dp"/>
                     </LinearLayout>
                 </ScrollView>
+            </LinearLayout>
 
+            <!-- Pollo Asado con Limón -->
+            <LinearLayout
+                android:id="@+id/polloV"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/textPollo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="Pollo Asado con Limón"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/imgPollo"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="30dp"
+                    android:adjustViewBounds="true"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/pollo_asado_con_limon"/>
+
+                <ScrollView
+                    android:layout_width="340dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:padding="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ingredientesPollo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ingredientes_pollo_limon"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/preparacionPollo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/preparacion_pollo_limon"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="12dp"/>
+                    </LinearLayout>
+                </ScrollView>
             </LinearLayout>
 
         </LinearLayout>

@@ -16,11 +16,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Eccomerce">
         <activity
+            android:name=".TragosTodas"
+            android:exported="false" />
+        <activity
             android:name=".recetaMenu"
             android:exported="false" />
         <activity
             android:name=".EmpanadasTodas"
             android:exported="false" /> <!-- FileProvider -->
+        <activity
+            android:name=".ParrillasTodas"
+            android:exported="false" />
+
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.eccomerce.provider"

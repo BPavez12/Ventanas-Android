@@ -45,11 +45,8 @@ public class RecetaCrear extends AppCompatActivity {
         imageView = findViewById(R.id.imageView);
         Button btnCamera = findViewById(R.id.btnCamera);
 
-
         EditText nombreReceta = findViewById(R.id.nombreReceta);
-
         EditText ingredientesReceta = findViewById(R.id.ingredientesReceta);
-
         EditText preparacionReceta = findViewById(R.id.preparacionReceta);
 
         Button btnCrearReceta = findViewById(R.id.btnCrearR);
@@ -57,27 +54,33 @@ public class RecetaCrear extends AppCompatActivity {
         btnCrearReceta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String nombre = nombreReceta.getText().toString();
-
                 String ingredientes = ingredientesReceta.getText().toString();
-
                 String preparacion = preparacionReceta.getText().toString();
+                String imagenUri = photoURI != null ? photoURI.toString() : null;
 
-                Intent intent = new Intent(RecetaCrear.this, recetaMenu.class);
+                // Guardar en SharedPreferences
+                getSharedPreferences("Recetas", MODE_PRIVATE)
+                        .edit()
+                        .putString("nombre", nombre)
+                        .putString("ingredientes", ingredientes)
+                        .putString("preparacion", preparacion)
+                        .putString("imagenUri", imagenUri)
+                        .apply();
 
-                intent.putExtra("nombre", nombre);
-                intent.putExtra("ingredientes", ingredientes);
-                intent.putExtra("preparacion", preparacion);
-
-                if (photoURI != null) {
-                    intent.putExtra("imagenUri", photoURI.toString());
+                // Enviar de vuelta también por setResult
+                Intent resultIntent = new Intent();
+                resultIntent.putExtra("nombre", nombre);
+                resultIntent.putExtra("ingredientes", ingredientes);
+                resultIntent.putExtra("preparacion", preparacion);
+                if (imagenUri != null) {
+                    resultIntent.putExtra("imagenUri", imagenUri);
                 }
-
-                startActivity(intent);
-
+                setResult(RESULT_OK, resultIntent);
+                finish();
             }
         });
+
 
         // Inicializar lanzador de la cámara
         takePictureLauncher = registerForActivityResult(
