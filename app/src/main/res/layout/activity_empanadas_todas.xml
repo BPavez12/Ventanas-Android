@@ -8,20 +8,19 @@
     android:background="@drawable/fondo_chile"
     tools:context=".EmpanadasTodas">
 
-    <!-- Mensaje inicial -->
-    <TextView
-        android:id="@+id/mensajeDeslizar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Deslizar hacia los lados para cambiar recetas"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:background="@drawable/burbuja_texto"
-        android:padding="10dp"
+    <!-- Botón de atrás -->
+    <ImageButton
+        android:id="@+id/btnMenuRetroceder"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
-        android:layout_marginStart="24dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/volver_atras"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_retroceso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <HorizontalScrollView
         android:layout_width="409dp"
